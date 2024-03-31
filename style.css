@@ -1,0 +1,50 @@
+body {
+    background-image: url(https://cdn2.vectorstock.com/i/1000x1000/81/76/red-white-diagonal-stripe-pattern-background-vector-23248176.jpg);
+}
+label{
+    font-size: 16pt;
+    /* border: solid red; */
+    display: flex;
+    justify-content: center;
+   
+
+}
+#myForm{
+    border:5px solid black;
+    align-content: center;
+    height: 30vh;
+    background-color: rgb(36, 187, 36);
+
+   
+}
+#myForm input{
+    /* border: solid red; */
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: larger;
+    background-color: #ffae45e3;
+}
+#myForm ::placeholder{
+    color:black;
+    font-size: large;
+}
+button{
+    border-radius: 2cm;
+    font-size: larger;
+    margin-left: 36%;
+   
+}
+button:hover{
+    border-radius: 2cm;
+    font-size: larger;
+    margin-left: 36%;
+    background-color: red;
+   
+}
+#mushroom{
+    height:50px;
+    /* border:solid black; */
+    margin-left: 40%;
+    
+}
