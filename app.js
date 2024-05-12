@@ -1,40 +1,42 @@
-window.alert("Welcome to Super Mario's Matching Game");
-window.alert("Fill out form to earn Mushroom")
+
+  window.alert("Welcome to Super Mario's Matching Game");
+  // window.alert("Fill out form to earn Mushroom");
+
 // Function to handle form submission
-function formSubmission(e) {
-  e.preventDefault(); // Prevents default form submission behavior
+// function formSubmission(e) {
+//   e.preventDefault(); // Prevents default form submission behavior
   
-  const nameInput = document.getElementById('nameInput');
-  const favoriteCharacterInput = document.getElementById('characterInput');
-  // Name validation
-  if (!nameInput.value) {
-    return; 
-  }
+//   const nameInput = document.getElementById('nameInput');
+//   const favoriteCharacterInput = document.getElementById('characterInput');
+//   // Name validation
+//   if (!nameInput.value) {
+//     return; 
+//   }
 
-  // Favorite Character validation
-  if (!favoriteCharacterInput.value) {
-    return; 
-  }
+//   // Favorite Character validation
+//   if (!favoriteCharacterInput.value) {
+//     return; 
+//   }
 
-  document.getElementById('myForm').remove();
-}
+//   document.getElementById('myForm').remove();
+// }
 
-// Attach event listener to form submission
-document.getElementById('myForm').addEventListener('submit', formSubmission);
+// // Attach event listener to form submission
+// document.getElementById('myForm').addEventListener('submit', formSubmission);
 
-function cloneAndModifyLabel() {
-  const originalLabel = document.querySelector('#myForm label');
-  const clonedLabel = originalLabel.cloneNode(true);
-  clonedLabel.textContent = " Earn";
-  clonedLabel.style.fontWeight = "bold";
+// function cloneAndModifyLabel() {
+//   const originalLabel = document.querySelector('#myForm label');
+//   const clonedLabel = originalLabel.cloneNode(true);
+//   clonedLabel.textContent = " Earn";
+//   clonedLabel.style.fontWeight = "bold";
 
-  const myForm = document.getElementById("myForm");
-  const firstChild = myForm.firstChild;
-  myForm.insertBefore(clonedLabel, firstChild);
-}
+//   const myForm = document.getElementById("myForm");
+//   const firstChild = myForm.firstChild;
+//   myForm.insertBefore(clonedLabel, firstChild);
+// }
 
 // Call the function
-cloneAndModifyLabel();
+// cloneAndModifyLabel();
 
 //Create container to put NavBar in
 const container = document.getElementsByClassName("mainContainer")[0];
@@ -246,7 +248,5 @@ container.insertBefore(navBar, cardContainer);
 navBar.appendChild(marioGif);
 document.head.appendChild(style);
 cardContainer.appendChild(table);
-
-
 
 
